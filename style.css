@@ -1,0 +1,80 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #8DBB41; /* Verde do fundo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Faixas de Título e Rodapé */
+.top-banner, .footer-banner {
+    background-color: #A67C41; /* Marrom claro/dourado */
+    color: white;
+    width: 80%; /* Largura conforme a imagem */
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.footer-banner {
+    width: 100%; /* Rodapé ocupa a largura total embaixo */
+    margin-top: auto;
+}
+
+/* Container Central */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    gap: 15px; /* Espaçamento entre os blocos */
+}
+
+/* Sub-título e Caixas de Texto */
+.sub-banner, .info-list, .link-box {
+    background-color: #A67C41;
+    color: white;
+    width: 450px; /* Largura fixa aproximada para manter o estilo */
+    padding: 15px;
+    text-align: center;
+}
+
+/* Lista de Benefícios */
+.info-list {
+    list-style: none;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.info-list li::before {
+    content: "● ";
+    margin-right: 5px;
+}
+
+/* Imagens */
+.image-box img {
+    width: 450px; /* Tamanho proporcional à imagem enviada */
+    display: block;
+    border: 1px solid #555;
+}
+
+/* Link */
+.link-box a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    word-break: break-all;
+}
+
+.link-box a:hover {
+    text-decoration: underline;
+}
